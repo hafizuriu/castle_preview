@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CASTLE — Center for Assured and Secure Trustworthy Learning Engines</title>
+<meta name="description" content="CASTLE is a coalition of seven AI research labs at the University of Maine and the University of Southern Maine, working on trustworthy, efficient, and embodied AI." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css" />
+<style>
+  .lab-card.lab-siege::before { background: #4b3aa6; }
+  /* Mute the lab card "Visit" affordance since labs aren't separate pages here */
+  .lab-card .card-link { color: var(--c-muted); pointer-events: none; }
+  .lab-card .card-link::after { display: none; }
+</style>
+</head>
+<body id="top">
+
+<div class="topbar">
+  <div class="container">
+    <span>University of Maine &middot; University of Southern Maine</span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="container">
+    <a class="brand" href="#top">
+      <span class="brand-mark">C</span>
+      <span class="brand-text">CASTLE
+        <div class="brand-sub">Assured · Secure · Trustworthy</div></span>
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div>
+      <span class="section-eyebrow">A coalition of seven AI labs</span>
+      <h1>Building AI that the real world can depend on.</h1>
+      <p class="lede">
+        CASTLE brings together researchers from the University of Maine and the
+        University of Southern Maine working at the intersection of artificial intelligence,
+        hardware, energy, manufacturing, language, security, and the physical world &mdash; with a shared
+        focus on trust, efficiency, and deployment under real-world constraints.
+      </p>
+      <div class="hero-cta">
+        <a href="#labs" class="btn btn-primary">Explore the labs</a>
+        <a href="#team" class="btn btn-outline">Meet the team</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num">7</div>
+          <div class="stat-label">Research labs</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Universities</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">40+</div>
+          <div class="stat-label">Edge devices in service</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">30 kVA</div>
+          <div class="stat-label">Microgrid testbed power</div>
+        </div>
+      </div>
+    </div>
+    <figure class="hero-art-figure">
+      <img src="assets/img/ai-vision.svg" alt="A procedurally-generated neural-network illustration representing CASTLE's research vision: a central glowing AI core surrounded by clusters of connected nodes." class="hero-art-img" />
+      <figcaption>An AI-generated vision of trustworthy intelligence.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section>
+  <div class="container">
+    <div class="grid grid-2">
+      <div class="reveal">
+        <span class="section-eyebrow">Our Vision</span>
+        <h2 class="section-title">An AI ecosystem for the things AI must actually do.</h2>
+        <p class="muted">
+          We work on the parts of AI that touch reality &mdash; running on small devices,
+          steering physical machines, sharing the electric grid, retrieving the right
+          information, manufacturing real materials, and being safe enough to trust with all
+          of it. Our research spans the algorithm, the hardware, the system, and the people
+          who use them.
+        </p>
+      </div>
+      <div class="reveal">
+        <span class="section-eyebrow">Our Mission</span>
+        <h2 class="section-title">Make AI more efficient, more honest, and more useful.</h2>
+        <p class="muted">
+          Each of our labs takes a slice of that problem &mdash; from energy-efficient
+          accelerators for large language models, to autonomous experimentation in
+          manufacturing, to resilient AI control of distribution grids, to multi-user
+          extended reality. Together they form a single research center serving Maine and the
+          field at large.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LABS -->
+<section id="labs" class="section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-eyebrow">The Labs</span>
+        <h2 class="section-title">Seven labs. One center.</h2>
+        <p class="section-intro mb-0">
+          Each lab is led by its own principal investigator and runs independently &mdash;
+          but they share students, infrastructure, and a common research agenda for AI
+          that is trustworthy and deployable.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="card lab-card lab-sdml reveal">
+        <div class="lab-acronym">SDML</div>
+        <h3>Self-Driving Manufacturing Lab</h3>
+        <p>Autonomous experimentation, AI-guided digital twins, and closed-loop optimization for advanced manufacturing.</p>
+        <p><span class="tag">USM</span> <span class="tag">Manufacturing</span> <span class="tag">Robotics</span></p>
+        <span class="card-link">Dr. Amir Kordijazi</span>
+      </article>
+
+      <article class="card lab-card lab-genius reveal">
+        <div class="lab-acronym">GENIUS</div>
+        <h3>Next-Generation Dependable &amp; Sustainable Computing</h3>
+        <p>Reliable, secure, energy-efficient AI &mdash; including hardware acceleration for large language models.</p>
+        <p><span class="tag">UMaine</span> <span class="tag">AI hardware</span> <span class="tag">LLMs</span></p>
+        <span class="card-link">Dr. Ayesha Siddique</span>
+      </article>
+
+      <article class="card lab-card lab-aiir reveal">
+        <div class="lab-acronym">AIIR</div>
+        <h3>Artificial Intelligence &amp; Information Retrieval</h3>
+        <p>The first information-retrieval lab in Maine: RAG systems, multimodal LLMs, and applied AI on domain-specific tasks.</p>
+        <p><span class="tag">USM</span> <span class="tag">NLP</span> <span class="tag">RAG</span></p>
+        <span class="card-link">Dr. Behrooz Mansouri</span>
+      </article>
+
+      <article class="card lab-card lab-microgrid reveal">
+        <div class="lab-acronym">Microgrid Lab</div>
+        <h3>AI for Power Systems &amp; Microgrids</h3>
+        <p>Reinforcement learning, multi-agent systems, and real-time hardware-in-the-loop experimentation for resilient grids.</p>
+        <p><span class="tag">UMaine</span> <span class="tag">RL</span> <span class="tag">Smart grid</span></p>
+        <span class="card-link">Dr. Hepeng Li</span>
+      </article>
+
+      <article class="card lab-card lab-cypais reveal">
+        <div class="lab-acronym">CyPAIS</div>
+        <h3>Cyber-Physical AI Systems</h3>
+        <p>Distributed AI, edge inference, and device-edge-cloud co-design for real-time XR and LLM services.</p>
+        <p><span class="tag">UMaine</span> <span class="tag">Edge AI</span> <span class="tag">XR</span></p>
+        <span class="card-link">Dr. Xueyu Hou · Dr. Yongjie Guan</span>
+      </article>
+
+      <article class="card lab-card lab-unex reveal">
+        <div class="lab-acronym">U-NEX</div>
+        <h3>Networked Extended-reality &amp; Edge Systems</h3>
+        <p>Multi-user AR, UAV swarms, and programmable wireless infrastructure for collaborative AI in the physical world.</p>
+        <p><span class="tag">UMaine</span> <span class="tag">AR/VR</span> <span class="tag">Networking</span></p>
+        <span class="card-link">Dr. Yongjie Guan</span>
+      </article>
+
+      <article class="card lab-card lab-siege reveal">
+        <div class="lab-acronym" style="color:#4b3aa6;">SIEGE</div>
+        <h3>Secure and Intelligent Edge Research Lab</h3>
+        <p>AI security across the full stack: microelectronic security, trustworthy AI, agentic AI, and AI-enabled edge systems.</p>
+        <p><span class="tag">UMaine</span> <span class="tag">AI security</span> <span class="tag">Trustworthy AI</span></p>
+        <span class="card-link">Dr. Prabuddha Chakraborty</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH THEMES -->
+<section id="research">
+  <div class="container">
+    <span class="section-eyebrow">What unites us</span>
+    <h2 class="section-title">Six research threads woven across the Center.</h2>
+    <p class="section-intro">
+      Our labs work on different problems, but the threads connecting them are the same: making AI smaller, safer, smarter about the physical world, more grounded in reliable information, and harder to fool.
+    </p>
+
+    <div class="grid grid-3">
+      <div class="theme-block reveal">
+        <h4>Edge &amp; embodied AI</h4>
+        <p>Real-time inference on resource-constrained devices &mdash; Jetson, FPGAs, micro-power systems &mdash; for XR, drones, and robotics.</p>
+      </div>
+      <div class="theme-block reveal">
+        <h4>Trustworthy &amp; secure AI</h4>
+        <p>Adversarial robustness, explainable models, security-aware accelerators, and reliability under fault.</p>
+      </div>
+      <div class="theme-block reveal">
+        <h4>Foundation models &amp; retrieval</h4>
+        <p>Hardware acceleration for LLMs, conversational and math information retrieval, multimodal RAG.</p>
+      </div>
+      <div class="theme-block reveal">
+        <h4>Autonomous experimentation</h4>
+        <p>Self-driving labs, digital twins, predictive analytics, and computer vision for materials and manufacturing.</p>
+      </div>
+      <div class="theme-block reveal">
+        <h4>AI for energy &amp; the grid</h4>
+        <p>Reinforcement learning and multi-agent control for distributed energy resources, with PHIL/CHIL validation.</p>
+      </div>
+      <div class="theme-block reveal">
+        <h4>Networked AI systems</h4>
+        <p>Multi-user XR, UAV swarms, SDN-based wireless testbeds, and communication-computation co-design.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM — FACULTY -->
+<section id="team" class="section-alt">
+  <div class="container">
+    <span class="section-eyebrow">Principal Investigators</span>
+    <h2 class="section-title">Faculty.</h2>
+    <p class="section-intro">
+      Seven principal investigators across the University of Maine and the University of Southern Maine, leading the labs that make up CASTLE.
+    </p>
+
+    <div class="people-grid">
+
+      <article class="person">
+        <div class="person-photo"><img src="assets/img/people/prabuddha-chakraborty.jpg" alt="Dr. Prabuddha Chakraborty"></div>
+        <div class="person-body">
+          <h3 class="person-name">Dr. Prabuddha Chakraborty</h3>
+          <p class="person-role">Director, CASTLE &middot; Dr. Waldo "Mac" Libbey '44 Professor &amp; Assistant Professor, ECE, University of Maine</p>
+          <p class="person-lab">SIEGE Lab</p>
+          <p class="muted" style="font-size: 0.9rem; margin: 0.5rem 0 0;">
+            Leads CASTLE and directs the SIEGE Lab. Research at the intersection of AI and security &mdash; spanning microelectronic security, trustworthy machine learning, agentic AI, and secure AI-enabled edge systems.
+          </p>
+        </div>
+      </article>
+
+      <article class="person">
+        <div class="person-photo"><img src="assets/img/people/amir-kordijazi.jpg" alt="Dr. Amir Kordijazi"></div>
+        <div class="person-body">
+          <h3 class="person-name">Dr. Amir Kordijazi</h3>
+          <p class="person-role">Assistant Professor of Industrial Engineering, University of Southern Maine</p>
+          <p class="person-lab">SDML &mdash; Self-Driving Manufacturing Lab</p>
+          <p class="muted" style="font-size: 0.9rem; margin: 0.5rem 0 0;">
+            AI/ML for advanced manufacturing, AI-guided digital twins, predictive analytics, and autonomous experimentation. 40+ peer-reviewed publications; recipient of the Faculty Senate Award for Scholarship at USM and two AFS Best Paper Awards.
+          </p>
+        </div>
+      </article>
+
+      <article class="person">
+        <div class="person-photo"><img src="assets/img/people/ayesha-siddique.jpg" alt="Dr. Ayesha Siddique"></div>
+        <div class="person-body">
+          <h3 class="person-name">Dr. Ayesha Siddique</h3>
+          <p class="person-role">Assistant Professor, Electrical and Computer Engineering, University of Maine</p>
+          <p class="person-lab">GENIUS Lab</p>
+          <p class="muted" style="font-size: 0.9rem; margin: 0.5rem 0 0;">
+            Reliable, secure, and energy-efficient AI; security-aware large language models; explainable-AI-guided hardware acceleration for safety-critical applications. Ph.D., University of Missouri (2020).
+          </p>
+        </div>
+      </article>
+
+      <article class="person">
+        <div class="person-photo"><img src="assets/img/people/behrooz-mansouri.jpg" alt="Dr. Behrooz Mansouri"></div>
+        <div class="person-body">
+          <h3 class="person-name">Dr. Behrooz Mansouri</h3>
+          <p class="person-role">Assistant Professor of Computer Science, University of Southern Maine</p>
+          <p class="person-lab">AIIR Lab &middot; Dubyak Center Director</p>
+          <p class="muted" style="font-size: 0.9rem; margin: 0.5rem 0 0;">
+            Information retrieval, conversational math search, legal IR. Introduced Tangent-CFT and MathAMR; co-organized the ARQMath lab at CLEF 2020&ndash;2022. Director of the USM Computer Science graduate program.
+          </p>
+        </div>
+      </article>
+
+      <article class="person">
+        <div class="person-photo"><img src="assets/img/people/hepeng-li.png" alt="Dr. Hepeng Li"></div>
+        <div class="person-body">
+          <h3 class="person-name">Dr. Hepeng Li</h3>
+          <p class="person-role">Robert N. Haskell Assistant Professor, ECE, University of Maine</p>
+          <p class="person-lab">Microgrid Laboratory</p>
+          <p class="muted" style="font-size: 0.9rem; margin: 0.5rem 0 0;">
+            Smart grids and microgrids, reinforcement learning, multi-agent systems. IEEE PESGM Best Paper Award (2018, 2024). Chair of the ADP and RL in Power and Energy Internets Task Force.
+          </p>
+        </div>
+      </article>
+
+      <article class="person">
+        <div class="person-photo"><img src="assets/img/people/xueyu-hou.png" alt="Dr. Xueyu Hou"></div>
+        <div class="person-body">
+          <h3 class="person-name">Dr. Xueyu Hou</h3>
+          <p class="person-role">Assistant Professor, ECE, University of Maine</p>
+          <p class="person-lab">CyPAIS Lab</p>
+          <p class="muted" style="font-size: 0.9rem; margin: 0.5rem 0 0;">
+            Distributed AI systems, edge computing, and next-generation networking for real-time XR and LLM services. Device-edge-cloud collaboration, efficient model inference, latency-aware system design.
+          </p>
+        </div>
+      </article>
+
+      <article class="person">
+        <div class="person-photo"><img src="assets/img/people/yongjie-guan.jpg" alt="Dr. Yongjie Guan"></div>
+        <div class="person-body">
+          <h3 class="person-name">Dr. Yongjie Guan</h3>
+          <p class="person-role">Assistant Professor, University of Maine</p>
+          <p class="person-lab">U-NEX Lab &middot; CyPAIS co-PI</p>
+          <p class="muted" style="font-size: 0.9rem; margin: 0.5rem 0 0;">
+            Multi-user augmented reality, edge computing, and wireless networking. Decentralized, low-latency systems for shared immersive environments across heterogeneous devices.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- STUDENTS -->
+<section>
+  <div class="container">
+    <span class="section-eyebrow">Graduate researchers</span>
+    <h2 class="section-title">Students.</h2>
+    <p class="section-intro">
+      Our students drive the research. Below are graduate researchers currently working across CASTLE's labs.
+    </p>
+
+    <div class="people-grid">
+
+      <article class="person">
+        <div class="person-photo"><img src="assets/img/people/Nafees.png" alt="Nafees Siddique"></div>
+        <div class="person-body">
+          <h3 class="person-name">Nafees Siddique</h3>
+          <p class="person-role">Ph.D. Student, ECE, University of Maine</p>
+          <p class="person-lab">GENIUS Lab</p>
+          <p class="muted" style="font-size: 0.9rem; margin: 0.5rem 0 0;">
+            LLM hardware acceleration, energy-efficient explainable AI, and security-aware AI hardware. B.Sc., American International University, Bangladesh.
+          </p>
+        </div>
+      </article>
+
+      <article class="person">
+        <div class="person-photo"><img src="assets/img/people/Bishakha.png" alt="Bishakha Rani Biswas"></div>
+        <div class="person-body">
+          <h3 class="person-name">Bishakha Rani Biswas</h3>
+          <p class="person-role">Graduate Student, ECE, University of Maine</p>
+          <p class="person-lab">CyPAIS Lab</p>
+          <p class="muted" style="font-size: 0.9rem; margin: 0.5rem 0 0;">
+            Machine Learning as a Service (MLaaS), efficient LLMs, distributed and edge computing &mdash; with a focus on live LLM-based content delivery in stochastic, resource-constrained environments.
+          </p>
+        </div>
+      </article>
+
+      <article class="person">
+        <div class="person-photo"><img src="assets/img/mehedi.png" alt="Md Mehedi Hasan"></div>
+        <div class="person-body">
+          <h3 class="person-name">Md Mehedi Hasan</h3>
+          <p class="person-role">Graduate Student, University of Maine</p>
+          <p class="person-lab">U-NEX Lab</p>
+          <p class="muted" style="font-size: 0.9rem; margin: 0.5rem 0 0;">
+            Multi-user augmented reality, multi-user SLAM, and smart-agriculture monitoring using edge computing and sensor networks for precision-agriculture applications.
+          </p>
+        </div>
+      </article>
+
+      <article class="person">
+        <div class="person-photo"><img src="assets/img/people/tanzim.jpg" alt="Tanzim Mahfuz"></div>
+        <div class="person-body">
+          <h3 class="person-name">Tanzim Mahfuz</h3>
+          <p class="person-role">4th Year Ph.D. Scholar, ECE, University of Maine</p>
+          <p class="person-lab">SIEGE Lab</p>
+          <p class="muted" style="font-size: 0.9rem; margin: 0.5rem 0 0;">
+            AI for microelectronic security &mdash; bringing machine learning to the protection and verification of integrated-circuit designs.
+          </p>
+        </div>
+      </article>
+
+      <article class="person">
+        <div class="person-photo"><img src="assets/img/people/haider.jpg" alt="Zafaryab Haider"></div>
+        <div class="person-body">
+          <h3 class="person-name">Zafaryab Haider</h3>
+          <p class="person-role">Ph.D. Candidate, ECE, University of Maine</p>
+          <p class="person-lab">SIEGE Lab</p>
+          <p class="muted" style="font-size: 0.9rem; margin: 0.5rem 0 0;">
+            AI security and trustworthy AI &mdash; analyzing and hardening machine-learning systems against adversarial threats.
+          </p>
+        </div>
+      </article>
+
+      <article class="person">
+        <div class="person-photo"><img src="assets/img/people/hafizur.jpg" alt="Md Hafizur Rahman"></div>
+        <div class="person-body">
+          <h3 class="person-name">Md Hafizur Rahman</h3>
+          <p class="person-role">3rd Year Ph.D. Scholar, ECE, University of Maine</p>
+          <p class="person-lab">SIEGE Lab</p>
+          <p class="muted" style="font-size: 0.9rem; margin: 0.5rem 0 0;">
+            Agentic AI and system security &mdash; building autonomous AI agents that can operate safely inside complex software systems.
+          </p>
+        </div>
+      </article>
+
+      <article class="person">
+        <div class="person-photo"><img src="assets/img/people/tasneem.jpg" alt="Tasneem Suha"></div>
+        <div class="person-body">
+          <h3 class="person-name">Tasneem Suha</h3>
+          <p class="person-role">3rd Year Ph.D. Scholar, ECE, University of Maine</p>
+          <p class="person-lab">SIEGE Lab</p>
+          <p class="muted" style="font-size: 0.9rem; margin: 0.5rem 0 0;">
+            Integrated hardware/software security &mdash; co-design approaches that make security guarantees survive across the full stack.
+          </p>
+        </div>
+      </article>
+
+      <article class="person">
+        <div class="person-photo"><img src="assets/img/people/sarah.jpg" alt="Sarah Glatter"></div>
+        <div class="person-body">
+          <h3 class="person-name">Sarah Glatter</h3>
+          <p class="person-role">2nd Year Ph.D. Scholar, ECE, University of Maine</p>
+          <p class="person-lab">SIEGE Lab</p>
+          <p class="muted" style="font-size: 0.9rem; margin: 0.5rem 0 0;">
+            Big data, AI, and reinforcement-learning databases &mdash; building data systems that can power AI workloads at scale.
+          </p>
+        </div>
+      </article>
+
+      <article class="person">
+        <div class="person-photo"><img src="assets/img/people/nick.jpg" alt="Nick Millet"></div>
+        <div class="person-body">
+          <h3 class="person-name">Nick Millet</h3>
+          <p class="person-role">2nd Year Ph.D. Scholar, ECE, University of Maine</p>
+          <p class="person-lab">SIEGE Lab</p>
+          <p class="muted" style="font-size: 0.9rem; margin: 0.5rem 0 0;">
+            Cybersecurity AI &mdash; applying machine learning to detection, response, and defense of modern cyber systems.
+          </p>
+        </div>
+      </article>
+
+      <article class="person">
+        <div class="person-photo"><img src="assets/img/people/nafi.png" alt="Abdullah Al Nomaan Nafi"></div>
+        <div class="person-body">
+          <h3 class="person-name">Abdullah Al Nomaan Nafi</h3>
+          <p class="person-role">2nd Year Ph.D. Scholar, ECE, University of Maine</p>
+          <p class="person-lab">SIEGE Lab</p>
+          <p class="muted" style="font-size: 0.9rem; margin: 0.5rem 0 0;">
+            AI security &mdash; developing techniques that make machine-learning systems harder to attack and easier to verify.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="muted mt-2" style="margin-top:1.5rem;">
+      The Center's labs also host undergraduate and master's students, and welcome high-school interns through the AIIR Lab's outreach program.
+    </p>
+  </div>
+</section>
+
+<!-- CTA / CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="callout reveal">
+      <div class="flex between wrap gap-2">
+        <div style="max-width: 640px;">
+          <h2>Looking for a Ph.D., postdoc, or collaborator?</h2>
+          <p>Several of our labs are recruiting graduate researchers for the 2026&ndash;2027 academic year, and we welcome industry and academic collaborators across all seven labs.</p>
+        </div>
+        <div class="flex gap-1 wrap">
+          <a href="#team" class="btn btn-accent">Meet the team</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top" style="color:#fff">
+          <span class="brand-mark">C</span>
+          <span class="brand-text">CASTLE
+            <div class="brand-sub" style="color:#8c98a8">Assured · Secure · Trustworthy</div>
+          </span>
+        </a>
+        <p style="margin-top: 1rem;">Center for Assured and Secure Trustworthy Learning Engines &mdash; a coalition of AI research labs at the University of Maine and the University of Southern Maine.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Barrows Hall<br/>University of Maine<br/>Orono, ME 04469</li>
+          <li>+1 207 581 0000</li>
+          <li><a href="mailto:contact@castle.example">contact@castle.example</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Institutions</h4>
+        <ul>
+          <li>University of Maine</li>
+          <li>University of Southern Maine</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> CASTLE.</span>
+      <span>University of Maine · University of Southern Maine</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
